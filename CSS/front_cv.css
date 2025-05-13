@@ -196,7 +196,7 @@ h2{ /*titulo*/
         background-color: #1f0646; /*cor do fundo*/
         justify-content: center; /*alinhar no eixo primario*/
         padding: 0.5%;
-        height: 6vh; /*altura do cabeçalho*/
+        height: 8vh; /*altura do cabeçalho*/
     }
 
     .principal{ /*caixa principal*/
