@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Condensed+One&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{/*corpodo site*/
+    background-color: #12002e; /*cor do fundo*/
+    color: #f6f6f6; /*cor das letras*/
+    height: 100vh; /*tamanho da tela*/
+}
+
+/* -------- cabeçalho -------- */
+
+.cabeçalho_menu{ /*menu do cabeçalho*/
+    display: flex; /*caixa editavel*/
+    gap: 50px; /*espaçamento fixo*/
+    padding: 0.5% 0% 0.5% 2%; /*ordem de alteração: topo, direita, base, esquerda*/
+    background-color: #1f0646; /*cor do fundo*/
+}
+
+.cabeçalho_menu_link{ /*botoes cabeçalho*/
+    display: flex; /*caixa editavel*/
+    justify-content: center;
+    align-items: center;
+    font-family: "Special Gothic", sans-serif; /*alterar fonte*/
+    font-weight: 600; /*alterar espessura da fonte*/
+    font-size: 1.5rem; /*alterar tamanho da fonte com base na padrão do navegador 16px*/
+    color:#e6d4f5; /*cor da fonte*/
+    width: 150px;
+    border-radius: 5px;
+    text-decoration: none; /*decorações na fonte, sublinhar, italico ect*/
+}
+
+.cabeçalho_menu_link:hover{ /*botoes cabeçalho*/
+    background-color: #e6d4f5;
+    color:#12002e; /*cor da fonte*/
+}
+
+/* -------- principal -------- */
+
+.conteudo{ /*caixa principal*/
+    display: flex; /*caixa editavel*/
+    /*flex-direction: row; /* ficar em linha*/ 
+    align-items: center; /*alinhar no eixo secundario*/
+    justify-content: space-between; /*alinhar no eixo primario*/
+    margin: 7% 15% 5% 15%; /*margem na caixa*/
+    gap: 80px; /*espeço entre o conteudo*/
+}
+
+.conteudo_esquerda{ /*caixa da esquerda "palavras"*/
+    display: flex; /*container texto*/
+    flex-direction: column; /*seta itens pra coluna*/
+    width: 50%; /*largura caixa*/
+    gap: 50px; /*espaço entre as coisas*/
+}
+
+.conteudo_esquerda_titulo{ /*caixa do titulo*/
+    color: #f6f6f6; /*cor letra titulo*/
+    font-size: 1.875rem; /*tamanho fonte, relativo ao tamanho padrão*/
+    font-family: "Special Gothic Condensed One", sans-serif; /*fonte*/
+    font-weight: 500; /*espessura fonte*/
+    font-style: normal; /*estilo da fonte*/
+}
+
+.conteudo_esquerda_texto{ /*caixa do texto*/
+    font-size: 1.25rem; /*tamanho fonte, relativo ao tamanho padrão*/
+    font-family: "Special Gothic Condensed One", sans-serif; /*fonte*/
+    font-weight: 100; /*espessura fonte*/
+    font-style: normal; /*estilo da fonte*/
+}
+
+.conteudo_esquerda_botoes{ /*container de links*/
+    display: flex; /*caixa editavel*/
+    justify-content: space-evenly; /*alinhar no eixo primario*/
+}
+
+.conteudo_esquerda_botoes_botao{
+    font-size: 1rem; /*tamanho fonte, relativo ao tamanho padrão*/
+    background-color: #1f0646;
+    color: #e6d4f5;
+    width: 30%; 
+    padding: 16px;
+    border-radius: 16px;
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.conteudo_esquerda_botoes_botao:hover{
+    background-color: #e6d4f5; /*cor do fundo*/
+    color: #1f0646; /*cor letra*/
+    font-size: 1.25rem;
+    padding: 12px 16px;
+}
+
+.conteudo_direita{
+    width: 40%;
+}
+
+.rodape{
+    color: #3e2369;
+    padding: 12px;
+    text-align: center;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1024px){
+    .conteudo{
+        flex-direction: column-reverse;
+    }
+    .conteudo_direita{
+        width: 70%;
+    }
+    .conteudo_esquerda{ /*caixa da esquerda "palavras"*/
+        display: flex; /*container texto*/
+        flex-direction: column; /*seta itens pra coluna*/
+        width: 70%; /*largura caixa*/
+        gap: 50px; /*espaço entre as coisas*/
+    }
+}

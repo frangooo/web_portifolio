@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Condensed+One&display=swap');
+
+*{ /*tudo de mais*/
+    margin: 0; /*margem*/
+    padding: 0; /*padding*/
+}
+
+.corpo{ /*corpodo site*/
+    background-color: #12002e; /*cor do fundo*/
+}
+
+/* -------- cabeçalho -------- */
+
+.cabeçalho_menu{ /*menu do cabeçalho*/
+    display: flex; /*caixa editavel*/
+    gap: 50px; /*espaçamento fixo*/
+    padding: 0.5% 0% 0.5% 2%; /*ordem de alteração: topo, direita, base, esquerda*/
+    background-color: #1f0646; /*cor do fundo*/
+}
+
+.cabeçalho_menu_link{ /*botoes cabeçalho*/
+    display: flex; /*caixa editavel*/
+    justify-content: center;
+    align-items: center;
+    font-family: "Special Gothic", sans-serif; /*alterar fonte*/
+    font-weight: 600; /*alterar espessura da fonte*/
+    font-size: 1.5rem; /*alterar tamanho da fonte com base na padrão do navegador 16px*/
+    color:#e6d4f5; /*cor da fonte*/
+    width: 150px;
+    border-radius: 5px;
+    text-decoration: none; /*decorações na fonte, sublinhar, italico ect*/
+}
+
+.cabeçalho_menu_link:hover{ /*botoes cabeçalho*/
+    background-color: #e6d4f5;
+    color:#12002e; /*cor da fonte*/
+}
+
+/* -------- principal -------- */
+
+.topo_container{ /*imagem e texto do topo*/
+    display: flex; /*caixa editavel*/
+    background-color: #e6d4f5; /*cor do fundo*/
+    flex-flow: column nowrap; /*faz o flim e joga os trem pra baixo*/
+}
+
+.topo{ /*cabeçalho topo*/
+    display: flex; /*caixa editavel*/
+    flex-direction: row-reverse;
+    align-items: center; /*alinhar no eixo secundario*/
+    justify-content: center; /*alinhar no eixo primario*/
+    gap : 5%; /*espaçamento*/
+    height: 15vh; /*altura do cabeçalho*/
+}
+
+.topo_texto{ /*texto do cabeçalho*/
+    font-family: "Special Gothic", sans-serif; /*alterar fonte*/
+    color: #12002e; /*cor da fonte*/
+    text-decoration: none; /*decorações na fonte, sublinhar, italico ect*/
+}
+
+.topo_imagem{ /*container da imagem*/
+    padding: 3vh 0vh 0vh 0vh; /*margem na imagem*/
+    background-color: #1f0646; /*cor do fundo*/
+    align-self: flex-start; /*estica a imagem*/
+}
+
+.topo_imagem_img{ /*imagem do cabeçalho*/
+    background-color: #1f0646;/*cor do fundo*/
+    width: 100px; /*largura imagem*/
+}
+
+.topo_menu{
+    display: flex; /*caixa editavel*/
+    flex-direction: row; /*seta itens pra linha*/
+    background-color: #1f0646; /*cor do fundo*/
+    justify-content: space-evenly; /*alinhar no eixo primario*/
+    padding: 0.5%;
+    height: 3vh; /*altura do cabeçalho*/
+}
+
+.topo_menu_botao{ /*botoes do cabeçalho*/
+    display: flex; /*caixa editavel*/
+    align-items: center; /*alinhar no eixo secundario*/
+    justify-content: center; /*alinhar no eixo primario*/
+    font-family: "Special Gothic", sans-serif; /*alterar fonte*/
+    font-weight: 100; /*alterar espessura da fonte*/
+    font-size: 0.75rem; /*alterar tamanho da fonte com base na padrão do navegador 16px*/
+    color:#e6d4f5; /*cor da fonte*/
+    text-decoration: none; /*decorações na fonte, sublinhar, italico ect*/
+    padding: 2px; /*margem do botão */
+    border-radius: 5px; /*borda arredondada*/
+    width: 200px; /*largura do botão*/
+}
+
+.git{ /*botão do github*/
+    order: 2; /*altera a ordem*/
+}
+.email{ /*botão do email*/
+    order: 3; /*altera a ordem*/
+} 
+.home{ /*botão do home*/
+    order: 1; /*altera a ordem*/
+}
+.num{ /*botão do numero*/
+    order: 4; /*altera a ordem*/
+}
+
+.topo_menu_botao:hover{ /*botão do github*/
+    background-color: #e6d4f5; /*cor do fundo*/
+    color: #12002e; /*cor da fonte*/
+}
+
+.principal{ /*caixa principal*/
+    display: flex; /*caixa editavel*/
+    flex-direction: row; /*seta itens pra linha*/
+    align-items: flex-start; /*alinhar no eixo secundario*/
+    justify-content: space-between; /*alinhar no eixo primario*/
+    margin: 0 5px 5px 5px; /*margem na caixa*/
+    background-color: #12002e; /*cor do fundo*/
+    gap: 2px; /*espaço entre o conteudo*/
+    height: 74vh; /*altura do cabeçalho*/
+    flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+}
+
+.principal_esquerda{ /*caixa da esquerda "palavras"*/
+    display: flex; /*container texto*/
+    flex-direction: column; /*seta itens pra coluna*/
+    width: 50%; /*largura caixa*/
+    flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+    align-self: stretch; /*estica a caixa*/
+    gap: 2px; /*espaço entre as coisas*/    
+}
+
+.principal_direita{ /*caixa da direita*/
+    display: flex; /*container texto*/
+    flex-direction: column; /*seta itens pra coluna*/
+    width: 50%; /*largura caixa*/
+    flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+    align-self: stretch; /*estica a caixa*/
+    gap: 2px; /*espaço entre as coisas*/
+
+}
+
+.principal_texto{ /*caixa do texto*/
+    font-size: 1rem; /*tamanho fonte, relativo ao tamanho padrão*/
+    font-family: "Special Gothic", sans-serif; /*fonte*/
+    font-weight: 5; /*espessura fonte*/
+    font-style: normal; /*estilo da fonte*/
+    padding: 3%;
+    background-color: #e6d4f5; /*cor do fundo*/
+}
+
+.habilidades{
+    flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+    align-self: stretch; /*estica a caixa*/
+}
+.formacao{
+    flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+    align-self: stretch; /*estica a caixa*/
+}
+
+ul{ /*lista*/
+    list-style-type: square; /*remove os marcadores da lista*/
+    padding: 0; /*remove o padding da lista*/
+    margin: 0 0 0 20px; /*remove a margem da lista*/
+    font-size: 0.8rem; /*tamanho fonte, relativo ao tamanho padrão*/
+}
+p{ /*paragrafo*/
+    margin: 0 0 0 10px; /*remove a margem do paragrafo*/
+    padding: 0; /*remove o padding do paragrafo*/
+    font-size: 0.8rem; /*tamanho fonte, relativo ao tamanho padrão*/
+}
+
+h3{ /*titulo*/
+    font-size: 1.25rem; /*tamanho fonte, relativo ao tamanho padrão*/
+    font-family: "Special Gothic", sans-serif; /*fonte*/
+    font-weight: 800; /*espessura fonte*/
+    font-style: bold; /*estilo da fonte*/
+    font-size: 1rem; /*tamanho fonte, relativo ao tamanho padrão*/
+}
+
+h2{ /*titulo*/
+    font-size: 1.5rem; /*tamanho fonte, relativo ao tamanho padrão*/
+    font-family: "Special Gothic", sans-serif; /*fonte*/
+    font-weight: 1000; /*espessura fonte*/
+    font-style: bold; /*estilo da fonte*/
+    padding: 2%; /*margem do titulo*/ 
+}
+
+@media(max-width:830px) {
+    .topo_menu{
+        display: flex; /*caixa editavel*/
+        flex-direction: row; /*seta itens pra linha*/
+        flex-wrap: wrap; /*faz o flim e joga os trem pra baixo*/
+        background-color: #1f0646; /*cor do fundo*/
+        justify-content: center; /*alinhar no eixo primario*/
+        padding: 0.5%;
+        height: 6vh; /*altura do cabeçalho*/
+    }
+
+    .principal{ /*caixa principal*/
+        display: flex; /*caixa editavel*/
+        flex-direction: column; /*seta itens pra linha*/
+        align-items: flex-start; /*alinhar no eixo secundario*/
+        justify-content: space-between; /*alinhar no eixo primario*/
+        margin: 0 5px 5px 5px; /*margem na caixa*/
+        background-color: #12002e; /*cor do fundo*/
+        gap: 2px; /*espaço entre o conteudo*/
+        height: 74vh; /*altura do cabeçalho*/
+        flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+    }
+
+    .principal_esquerda{ /*caixa da esquerda "palavras"*/
+        display: flex; /*container texto*/
+        flex-direction: column; /*seta itens pra coluna*/
+        width: 100%; /*largura caixa*/
+        flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+        align-self: stretch; /*estica a caixa*/
+        gap: 2px; /*espaço entre as coisas*/    
+    }
+    
+    .principal_direita{ /*caixa da direita*/
+        display: flex; /*container texto*/
+        flex-direction: column; /*seta itens pra coluna*/
+        width: 100%; /*largura caixa*/
+        flex: 1 1 0; /*flex-grow, flex-shrink, flex-basis*/
+        align-self: stretch; /*estica a caixa*/
+        gap: 2px; /*espaço entre as coisas*/
+    
+    }
+}
